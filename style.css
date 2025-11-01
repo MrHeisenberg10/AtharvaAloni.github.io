@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background: linear-gradient(to bottom, #0a1930, #091524);
+  overflow-x: hidden;
+}
+
+/* Header & Navbar */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(10, 25, 48, 0.9);
+  z-index: 1000;
+  padding: 10px 50px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #00bfff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00bfff;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1595520519880-a86c48ea536c?fm=jpg&ixid=M3wxMjA3fDB8MHxwcm9maWxlLWxpa2VkfDE1fHx8ZW58MHx8fHx8&ixlib=rb-4.0.3&q=80&w=1920') 
+    no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding: 0 10%;
+  background-attachment: fixed;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.text-section {
+  max-width: 50%;
+}
+
+.text-section h2 {
+  font-size: 2.5rem;
+  color: #00bfff;
+}
+
+.text-section h3 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.text-section p {
+  margin-top: 15px;
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.btn {
+  display: inline-block;
+  background: #00bfff;
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #0088cc;
+}
+
+.image-section img {
+  width: 300px;
+  border-radius: 50%;
+  border: 4px solid #00bfff;
+}
+
+/* About Section */
+.about-section {
+  background: linear-gradient(180deg, #0a1930, #102a4d);
+  color: white;
+  padding: 100px 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  gap: 40px;
+}
+
+.about-image img {
+  width: 480px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 191, 255, 0.4);
+}
+
+.about-text {
+  flex: 1;
+  min-width: 350px;
+}
+
+.about-text h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.about-text h2 span {
+  color: #00bfff;
+}
+
+.about-text p {
+  line-height: 1.7;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  color: #e0e0e0;
+}
+
+/* My Work Section */
+section {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+}
+
+.project-card a {
+  color: #00bfff;
+  text-decoration: none;
+}
+
+/* Internship & Certificates Section */
+.certifications {
+  text-align: center;
+  padding: 80px 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  margin-top: 60px;
+}
+
+.certifications h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.certifications-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.certificate-card {
+  width: 300px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 191, 255, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.certificate-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0, 191, 255, 0.5);
+}
+
+.certificate-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid rgba(0, 191, 255, 0.3);
+}
+
+.certificate-card h3 {
+  font-size: 1rem;
+  color: #00bfff;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  margin: 0;
+}
+
+/* ✅ Vertical Contact Form Styling */
+.vertical-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  max-width: 500px;
+  margin: 30px auto;
+  text-align: left;
+}
+
+.vertical-form label {
+  font-size: 1rem;
+  color: #00bfff;
+}
+
+.vertical-form input,
+.vertical-form textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 1rem;
+}
+
+.vertical-form input::placeholder,
+.vertical-form textarea::placeholder {
+  color: #bbb;
+}
+
+.vertical-form button {
+  cursor: pointer;
+  background: #00bfff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.vertical-form button:hover {
+  background: #0088cc;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #081324;
+  color: #aaa;
+}
